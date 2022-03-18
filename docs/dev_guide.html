@@ -97,7 +97,25 @@ pre-commit run --all-files
 </code></pre>
 <p>Now every time you commit, these tests will run on the staged files.
 For detailed linting messages, run</p>
-<pre><code class="language-sh">flakehell lint
+<pre><code class="language-sh">flakeheaven lint
+</code></pre>
+<p>You may also want to display linting issues in your editor as you code.
+Below is a suggested configuration of VS-Code with the pylance plug-in
+or Vim (with the coc.nvim plug-in with the pyright extension)</p>
+<pre><code class="language-jsonc">// Put this in settings.json (VS-Code) or ~/.vim/coc-settings.json (For Vim)
+{
+    &quot;python.analysis.typeCheckingMode&quot;: &quot;off&quot;,
+    &quot;python.analysis.useLibraryCodeForTypes&quot;: true,
+    &quot;python.analysis.extraPaths&quot;: [&quot;scripts&quot;],
+    &quot;python.formatting.provider&quot;: &quot;autopep8&quot;,
+    &quot;python.formatting.autopep8Path&quot;:  &quot;~/.local/bin/autopep8&quot;,
+    &quot;python.linting.enabled&quot;: true,
+    &quot;python.linting.flake8Enabled&quot;: true,
+    &quot;python.linting.flake8Args&quot;: [&quot;lint&quot;],
+    &quot;python.linting.flake8Path&quot;: &quot;${env:CONDA_PREFIX}/bin/flakeheaven&quot;,
+    // Without VENV (requires `pip3 install --user flakeheaven flake8-docstrings flake8-bugbear ...`)
+    // &quot;python.linting.flake8Path&quot;: &quot;[USE PATH PRINTED BY PIP ABOVE]/Python/3.8/bin/flakeheaven&quot;,
+}
 </code></pre>
 <h2 id="adding-to-the-examples">Adding to the examples</h2>
 <p>Example scripts are very useful, and contributions are very desirable.
