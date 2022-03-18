@@ -63,6 +63,7 @@ https://nansencenter.github.io/DAPPER/docs/dapper/mods/LotkaVolterra/settings101
 https://nansencenter.github.io/DAPPER/docs/dapper/mods/QG/
 https://nansencenter.github.io/DAPPER/docs/dapper/mods/QG/counillon2009.html
 https://nansencenter.github.io/DAPPER/docs/dapper/mods/QG/f90/
+https://nansencenter.github.io/DAPPER/docs/dapper/mods/QG/illust_obs.html
 https://nansencenter.github.io/DAPPER/docs/dapper/mods/QG/sakov2008.html
 https://nansencenter.github.io/DAPPER/docs/dapper/mods/VL20/
 https://nansencenter.github.io/DAPPER/docs/dapper/mods/explore_props.html
