@@ -7,7 +7,7 @@ from dapper.mods.Lorenz63 import LPs, Tplot, dstep_dx, step, x0
 
 tseq = modelling.Chronology(0.01, dko=25, Ko=1000, Tplot=Tplot, BurnIn=4*Tplot)
 
-Nx = len(x0)
+Nx = len(x0)-1
 
 Dyn = {
     'M': Nx,
